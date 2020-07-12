@@ -1,4 +1,11 @@
 var numberOfButtons=document.querySelectorAll("button").length;
+var audioCrash=new Audio("sounds/crash.mp3");
+var audioKick=new Audio("sounds/kick-bass.mp3");
+var audioSnare=new Audio("sounds/snare.mp3");
+var audioTom1=new Audio("sounds/tom-1.mp3");
+var audioTom2=new Audio("sounds/tom-2.mp3");
+var audioTom3=new Audio("sounds/tom-3.mp3");
+var audioTom4=new Audio("sounds/tom-4.mp3");
 for(var i=0;i<numberOfButtons;i++){
 
     //checking for button clicked
@@ -20,32 +27,25 @@ function playSound(buttonPressed){
 
     switch(buttonPressed){
         case "w":
-            var audio=new Audio("sounds/crash.mp3");
-            audio.play();
+            audioCrash.play();
             break;
         case "a":
-            var audio=new Audio("sounds/kick-bass.mp3");
-            audio.play();
+            audioKick.play();
             break;
-        case "s":
-            var audio=new Audio("sounds/snare.mp3");
-            audio.play();
+        case "s":     
+            audioSnare.play();
             break;
         case "d":
-            var audio=new Audio("sounds/tom-1.mp3");
-            audio.play();
+            audioTom1.play();
             break;
         case "j":
-            var audio=new Audio("sounds/tom-2.mp3");
-            audio.play();
+            audioTom2.play();
             break;
         case "k":
-            var audio=new Audio("sounds/tom-3.mp3");
-            audio.play();
+            audioTom3.play();
             break;
         case "l":
-            var audio=new Audio("sounds/tom-4.mp3");
-            audio.play();
+            audioTom4.play();
             break;
     }    
 
